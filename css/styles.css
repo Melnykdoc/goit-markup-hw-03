@@ -79,6 +79,7 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
+    border: 1px solid #ececec;
 }
 .nav-logo {
     display: block;
@@ -276,6 +277,7 @@ body {
 .filter-list {
     display: flex;
     margin-bottom: 50px;
+    justify-content: center;
 
     font-weight: 500;
     font-size: 16px;
@@ -290,4 +292,47 @@ body {
 }
 .filter-list .filter-item:not(:last-child) {
     margin-right: 8px;
+}
+.filter-list .filter-btn:focus,
+.filter-list .filter-btn:hover {
+    background-color: var(--background-primary-btn);
+    color: var(--primary-btn-color);
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.portfolio-item:nth-child(3n) {
+    margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+}
+.flex-element {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 370px;
+    background: var(--background-header);
+    border: 1px solid #eeeeee;
+}
+.portfolio-title {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--second-title-color);
+}
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--text-color);
 }
